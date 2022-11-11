@@ -1,6 +1,10 @@
 # be-challenge
+This application developed using NodeJS, ExpressJS, Postgresql, JWT and many more.
+there's a file named "be-test.postman_collection" that have all collection API needed to test this app.
 
-1. first pull this repository
+Follow these steps to run and test this application.
+
+1. first clone this repository
 2. npm install to install all the necessary modules
 3. Open PGADMIN for postgresql
   3.1 Create database with this command:
@@ -49,5 +53,24 @@
     ('B10', 22000, 'USD', true, 'Marketing', 'Promoter') RETURNING *;"
     ![pg](https://user-images.githubusercontent.com/49251756/201357312-baf12860-0104-4cec-a649-083b91755a62.PNG)
 
-4. Create User for login.![login](https://user-images.githubusercontent.com/49251756/201357526-644dd199-98cf-46a6-9fce-47053556092a.PNG)
+4.API Create User for login.![login](https://user-images.githubusercontent.com/49251756/201357526-644dd199-98cf-46a6-9fce-47053556092a.PNG)
+
+5.API Login, if not login you won't be able to access the rest of the api. ![notAuthenticated](https://user-images.githubusercontent.com/49251756/201357874-10bac2bf-363b-4e93-8da7-f86fcd1d5444.PNG)
+![login](https://user-images.githubusercontent.com/49251756/201357903-7a82f193-3460-4b3b-a57d-747d4686c172.PNG)
+
+6. API Create Salary. ![createSalary](https://user-images.githubusercontent.com/49251756/201357966-46189fd3-d664-42d2-b88b-252971f7625f.PNG)
+
+7. API Get all salary. ![getAllSalaries](https://user-images.githubusercontent.com/49251756/201358081-883f0ae8-e362-4cd8-9741-0ae63898c8e5.PNG)
+
+8. API to fetch mean, min, max for salary over the entire database for provided financial year. ![salaryMeanMinMax](https://user-images.githubusercontent.com/49251756/201358174-ba47f9c4-4ccb-4b22-b2d8-19d4e6a731a9.PNG)
+
+9. API to fetch mean, min, max for salary for records which satisfy on_contract true for provided financial year. ![salaryMeanMinMaxContract](https://user-images.githubusercontent.com/49251756/201358346-e6250534-14ba-460d-b480-e292f84e1c42.PNG)
+
+10. API to fetch mean, min, max for salary for each department. ![salaryMeanMinMaxDepartment](https://user-images.githubusercontent.com/49251756/201358427-2b229a40-7ad2-41c5-ab8e-b275461688da.PNG)
+
+11. An API to fetch mean, min, max for salary for each department and sub-department combination.  ![salaryMeanMinMaxDepartmentAndSubDepartment](https://user-images.githubusercontent.com/49251756/201358562-412f3fd4-db09-467c-83b5-a5b82970ab6e.PNG)
+
+These all for the instruction and demo how to run and test this application. THANK YOU.
+
+
 
