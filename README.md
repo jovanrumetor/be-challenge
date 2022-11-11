@@ -7,12 +7,14 @@ Follow these steps to run and test this application.
 1. first clone this repository
 2. npm install to install all the necessary modules
 3. Open PGADMIN for postgresql
+
   3.1 Create database with this command:
     "CREATE DATABASE salaries
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
     CONNECTION LIMIT = -1;"
+    
   3.2 Create table salaries with this command:
     "CREATE TABLE public.salaries
      (id bigserial NOT NULL,
@@ -23,12 +25,14 @@ Follow these steps to run and test this application.
      on_contract boolean,
      sub_department character varying(255),
      PRIMARY KEY (id));"
+     
   3.3 create table users with this command:
     "CREATE TABLE public.users(
     id bigserial NOT NULL,
     username character varying(255),
     password character varying(255),
     PRIMARY KEY (id));"
+    
    3.4 Insert these dummy datas with this command below:
    "INSERT INTO salaries(name, salary, currency, on_contract, department, sub_department) 
     VALUES( 'A1', 22000, 'USD', true, 'Engineer', 'DevOps'),
