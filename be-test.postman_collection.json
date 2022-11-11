@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "4ea78d08-13da-4437-846c-0a2de58ff0b8",
+		"name": "be-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get salaries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Salary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"F MUSD\",\r\n\"salary\":9200,\r\n\"currency\": \"USD\",\r\n\"on_contract\": true,\r\n\"department\": \"Marketing\",\r\n\"sub_department\": \"Promotor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete salary",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salary mean min max",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/salaryMeanMinMax",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"salaryMeanMinMax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salary mean min max on contract",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/salaryContract",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"salaryContract"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salary mean min max department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/salarydepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"salarydepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salary mean min max on department and sub department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/salarydepartmentsub",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"salarydepartmentsub"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"admin\",\r\n\"password\": \"12345\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"admin\",\r\n\"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
