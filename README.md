@@ -4,8 +4,8 @@ there's a file named "be-test.postman_collection" that have all collection API n
 
 Follow these steps to run and test this application.
 
-1. first clone this repository
-2. npm install to install all the necessary modules
+1. first clone this repository branch development or unrar rar named "be-test" that in this repository.
+2. NPM INSTALL to install all the necessary modules
 3. Open PGADMIN for postgresql
 
   3.1 Create database with this command:
